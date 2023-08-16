@@ -1,0 +1,15 @@
+function yesOrNo(val: number): boolean | "Error" {
+    if (val > 10) {
+        return true;
+    } else if (val < 10) {
+        return false;
+    } else {
+        return "Error";
+    }
+}
+
+
+// Do Not Edit Here
+console.log(yesOrNo("100")); // Error
+console.log(yesOrNo(30)); // True
+console.log(yesOrNo(8)); // False

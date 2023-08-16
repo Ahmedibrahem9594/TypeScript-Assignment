@@ -1,0 +1,16 @@
+type custom = "yes" | "no"
+
+function isHeOld(age: number | string[]) : custom | "Error" {
+    if (age === 45) {
+        return "yes";
+    } else if (age === 30) {
+        return "no";
+    } else {
+        return "Error"
+    }
+}
+
+  // Do Not Edit Here
+  console.log(isHeOld("100")); // Error
+  console.log(isHeOld(45)); // "Yes"
+  console.log(isHeOld(30)); // "No"
